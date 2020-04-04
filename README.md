@@ -36,6 +36,11 @@ vim unu_doi_trei_Main.c
 
 ## Module object
 compile the C source in an object file
+
+link the java native interface header
+link the java native interface header for linux 
+`-I` option specifies directories in which to search for header files in the compilation process
+
 ```bash
 gcc -fpic -c -I /usr/lib/jvm/java-11-openjdk-amd64/include/ -I /usr/lib/jvm/java-11-openjdk-amd64/include/linux unu_doi_trei_Main.c
 ```
