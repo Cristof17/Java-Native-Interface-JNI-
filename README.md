@@ -23,7 +23,7 @@ java -cp $(pwd)/target -Djava.library.path=$(pwd)
 ## Compile module object 
 
 ```bash
-gcc -c -fpic print.c```
+gcc -c -fpic print.c
 ```
 
 ## Create a dynamic library in Linux from the module object
