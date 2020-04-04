@@ -1,3 +1,4 @@
+#Java
 ## Compilation 
 
 you can pass `javac` command arguments from files if the files start with @. `javac` reads the files starting with @ and puts their contents as command line arguments.
@@ -16,4 +17,18 @@ javac @javac_options @java_types
 ```bash
 java -cp $(pwd)/target -Djava.library.path=$(pwd)
 ```
+
+#C library
+
+## Compile module object 
+
+```bash
+gcc -c -fpic print.c```
+```
+
+##Create a dynamic library in Linux from the module object
+```bash
+gcc -shared -fpic -o libprint.so print.o
+```
+
 
