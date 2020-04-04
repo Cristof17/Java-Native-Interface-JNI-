@@ -1,4 +1,12 @@
 # Java
+
+## Generate C Header
+
+generate the C header file for the C compiler
+```bash
+javac -h unu/doi/trei/Main.java
+```
+
 ## Compilation 
 
 you can pass `javac` command arguments from files if the files start with @. `javac` reads the files starting with @ and puts their contents as command line arguments.
@@ -20,15 +28,22 @@ java -cp $(pwd)/target -Djava.library.path=$(pwd)
 
 # C library
 
-## Compile module object 
+## Create implementation file
 
 ```bash
-gcc -c -fpic print.c
+vim unu_doi_trei_Main.c
 ```
 
-## Create a dynamic library in Linux from the module object
+## Module object
+compile the C source in an object file
 ```bash
-gcc -shared -fpic -o libprint.so print.o
+gcc -c -fpic -o unu_doi_trei_Main.o unu_doi_trei_Main.c
+```
+
+## Dynamic library
+link the object file in a dynamic library 
+```bash
+gcc -shared -fpic -o libprint.so unu_doi_trei_Main.o
 ```
 
 
