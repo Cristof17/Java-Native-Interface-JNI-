@@ -18,7 +18,7 @@ javac @javac_options @java_types
 java -cp $(pwd)/target -Djava.library.path=$(pwd)
 ```
 
-#C library
+# C library
 
 ## Compile module object 
 
@@ -26,7 +26,7 @@ java -cp $(pwd)/target -Djava.library.path=$(pwd)
 gcc -c -fpic print.c```
 ```
 
-##Create a dynamic library in Linux from the module object
+## Create a dynamic library in Linux from the module object
 ```bash
 gcc -shared -fpic -o libprint.so print.o
 ```
