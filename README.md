@@ -14,7 +14,7 @@ you can pass `javac` command arguments from files if the files start with @. `ja
 `-verbose` option prints class fils searched and created
 
 ```bash
-javac @javac_options @java_types
+javac @javac_options @javac_types
 ```
 
 ## Run
