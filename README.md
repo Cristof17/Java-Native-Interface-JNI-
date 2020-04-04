@@ -37,7 +37,7 @@ vim unu_doi_trei_Main.c
 ## Module object
 compile the C source in an object file
 ```bash
-gcc -c -fpic -o unu_doi_trei_Main.o unu_doi_trei_Main.c
+gcc -fpic -c -I /usr/lib/jvm/java-11-openjdk-amd64/include/ -I /usr/lib/jvm/java-11-openjdk-amd64/include/linux unu_doi_trei_Main.c
 ```
 
 ## Dynamic library
