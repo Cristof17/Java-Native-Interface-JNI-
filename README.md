@@ -23,7 +23,7 @@ javac @javac_options @javac_types
 `-Djava.library.path` option specifies where to look for the C dynamic library
 
 ```bash
-java -cp $(pwd)/target -Djava.library.path=$(pwd)
+java -cp $(pwd)/target -Djava.library.path=$(pwd) unu.doi.trei.Main
 ```
 
 # C library
