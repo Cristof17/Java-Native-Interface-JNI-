@@ -4,7 +4,7 @@
 
 generate the C header file for the C compiler
 ```bash
-javac -h unu/doi/trei/Main.java
+javac -h . unu/doi/trei/Main.java
 ```
 
 ## Compilation 
